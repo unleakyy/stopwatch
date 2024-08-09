@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.master-container {
+  width: 75%;
+  min-width: 350px;
+  max-width: 550px;
+  margin-inline: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-block: 20px;
+  padding-inline: 20px;
+  box-shadow: 1px 1px 10px 1px hsla(0, 0%, 0%, 0.75);
+  border-radius: 20px;
+}
+
+#timer-container {
+  font-family: monospace;
+  font-size: 3rem;
+  color: red;
+}
+
+button {
+  padding-block: 5px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
