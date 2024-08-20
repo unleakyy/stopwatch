@@ -89,3 +89,39 @@ resetBtn.addEventListener("click", () => {
   startWatch.resetTimer();
   resetBtn.setAttribute("disabled", true);
 });
+
+/* EFFICIENT CODE WRITING FOR STOPWATCH */
+
+// const timerDisplay = document.getElementById("timer-container");
+// let currentTime = 0;
+
+// function start() {
+//   currentTime = Date.now();
+// }
+
+// function updateTime() {
+//   let newTime = Date.now();
+//   let elapsedTime = newTime - currentTime;
+//   let hour = Math.floor(elapsedTime / 1000 / 60 / 60);
+//   let minute = Math.floor((elapsedTime / 1000 / 60) % 60);
+//   let second = Math.floor((elapsedTime / 1000) % 60);
+//   let millisecond = elapsedTime % 1000;
+
+//   second = second.toString().padStart(2, 0);
+//   minute = minute.toString().padStart(2, 0);
+//   hour = hour.toString().padStart(2, 0);
+//   millisecond = millisecond.toString().padStart(3, 0);
+
+//   timerDisplay.textContent = `${hour}:${minute}:${second}.${millisecond}`;
+// }
+// let timeoutID;
+// const startBtn = document.getElementById("startBtn");
+// startBtn.addEventListener("click", () => {
+//   start();
+//   timeoutID = setInterval(updateTime, 1);
+// });
+
+// const stopBtn = document.getElementById("stopBtn");
+// stopBtn.addEventListener("click", () => {
+//   clearInterval(timeoutID);
+// });
