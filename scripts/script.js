@@ -46,7 +46,7 @@ function stopwatch() {
     s = 0;
     m = 0;
     h = 0;
-    timeString.textContent = `00:00:00:00`;
+    timeString.textContent = `00:00:00.00`;
   }
 
   return {
